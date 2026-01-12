@@ -18,13 +18,13 @@ google_file_ids=("15eOgNs7O78esPguQxsmbhpMEgWfwTqzT" \
                  "1eY7rtbxdyGHhySInf77lW6RcVVjEmimL" \
                  "1eY7rtbxdyGHhySInf77lW6RcVVjEmimL" \
                  "1Don0TDvJ7oc_GkEGnSMl5LLHn737vDnN")
-#for id in "${google_file_ids[@]}"; do
-#    gdown https://drive.google.com/uc?id="$id"
-#done
+for id in "${google_file_ids[@]}"; do
+    gdown https://drive.google.com/uc?id="$id"
+done
 
-#for f in `ls ./*.zip`; do
-#    unzip $f
-#done
+for f in `ls ./*.zip`; do
+    unzip $f
+done
 
 rm */*.png
 rm */*.pdf
